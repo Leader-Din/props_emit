@@ -34,7 +34,9 @@ import { ref } from 'vue'
 const emit = defineEmits(['submitStudent'])
 
 /**
+ * 
  * de clear variable 
+ * 
  */
 
 const inputFullName = ref('')
@@ -84,6 +86,7 @@ const addToCard = () => {
 
 <style scoped>
 .form-container {
+  font-family: 'Courier New', Courier, monospace;
   background: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -108,6 +111,7 @@ input {
 }
 
 button {
+  font-family: 'Courier New', Courier, monospace;
   padding: 10px;
   font-size: 16px;
   background-color: #3f51b5;

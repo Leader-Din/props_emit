@@ -17,31 +17,46 @@ const props = defineProps({
 
 <style scoped>
 .card-container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 20px;
+font-family: 'Courier New', Courier, monospace;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #002f6c; /* Dark blue background */
+  border-radius: 20px;
 }
 
 h2 {
+  grid-column: 1 / -1;
   text-align: center;
-  color: #333;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8em;
 }
 
 .card {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  background-color: #ffeb00; /* Bright yellow card */
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-3px);
+  transform: scale(1.05);
 }
 
 .card p {
-  margin: 4px 0;
+  margin: 10px 0;
+  color: #000;
+  font-weight: bold;
 }
+
+
 </style>
